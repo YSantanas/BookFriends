@@ -1,0 +1,146 @@
+body{
+
+    background-color: rgb(254, 239, 250);
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    border: 5px  ridge black;
+}
+
+
+h1{
+
+    color: brown;
+}
+
+h3{
+    color: aqua;
+}
+
+img {
+   
+    width: 200px;
+    height: auto;
+}
+
+.logo{
+    display: inline-block;
+
+    vertical-align: middle; /* Alinea verticalmente al centro */
+
+    width: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 20%; /* Asegúrate de que no haya margen */
+    padding: 0; /* Asegúrate de que no haya relleno */
+}
+
+
+.card{
+background-color: rgb(222, 245, 245);
+width: 300px;
+height: 50%;
+border-radius: 5%;
+margin: 2%;
+}
+
+.card-contenido{
+    background-color:white;
+    width: 90%;
+    border-radius: 5%;
+    margin: 2%;
+    margin-bottom: 20%;
+}
+
+
+
+
+
+
+
+
+nav  {
+    background-color: rgba(0, 255, 255, 0.101);
+    color: black;
+    
+    
+}
+
+nav ul {
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    list-style: none;
+    color: aqua;
+    font-size: 20px; /* Tamaño de las estrellas */
+    font-style:initial;
+}
+
+
+/* Estilo base para pantallas más grandes (ajusta los valores según sea necesario) */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+    
+}
+
+/* Cambiar el color del texto en el navbar a negro */
+nav ul li a {
+    color: black;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambia a bloques para que los elementos estén uno debajo del otro */
+        margin-right: 0; /* Elimina el margen entre elementos */
+        margin-bottom: 10px; /* Agrega espacio entre elementos apilados */
+    }
+}
+
+nav a {
+    text-decoration: none; /* Quitar decoración de subrayado de los enlaces */
+
+}
+
+
+
+.entrada{
+    text-align: center;
+    margin: 2%;
+
+}
+
+.titulo-pag{
+color: rgb(181, 104, 166);
+}
+
+
+.calificacion {
+    font-size: 24px; /* Tamaño de las estrellas */
+  }
+  
+  .estrella {
+    color: gold; /* Color de las estrellas llenas */
+  }
+  
+
+/* bootstrap*/
+/* Cambiar el color de fondo y el color del icono del botón de control previo */
+.carousel-control-prev {
+    background-color: black; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del icono */
+  }
+  
+  /* Cambiar el color de fondo y el color del icono del botón de control siguiente */
+  .carousel-control-next {
+    background-color: black; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del icono */
+  }
+  
+  .carousel{
+    width: 100%;
+    height: 80%;
+
+  }
