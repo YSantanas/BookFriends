@@ -1,11 +1,9 @@
 body{
-
     background-color: rgb(254, 239, 250);
     color: blueviolet;
     font-family: 'Roboto', sans-serif;
-    border: 5px  ridge black;
+    
 }
-
 
 h1{
 
@@ -22,26 +20,41 @@ img {
     height: auto;
 }
 
-.logo{
+main {
+    margin-bottom: 40px; /* Igual a la altura del footer */
+  }
+  
+
+footer{
+    background-color: #f0f0f0; 
+
+    text-align: center;
+    margin-top: 2%;
+    position: relative;
+    bottom: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.logo {
     display: inline-block;
-
     vertical-align: middle; /* Alinea verticalmente al centro */
-
     width: 10%;
     margin-left: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-right: 20%; /* Asegúrate de que no haya margen */
+    margin-right: 10%; /* Reducir el margen derecho para evitar que ocupe demasiado espacio */
     padding: 0; /* Asegúrate de que no haya relleno */
 }
 
 
 .card{
-background-color: rgb(222, 245, 245);
-width: 300px;
-height: 50%;
+background-color: rgb(222, 226, 245);
+margin: 3%;
 border-radius: 5%;
-margin: 2%;
+
+
 }
 
 .card-contenido{
@@ -50,71 +63,82 @@ margin: 2%;
     border-radius: 5%;
     margin: 2%;
     margin-bottom: 20%;
+    
 }
 
 
-
-
-
-
-
-
-nav  {
-    background-color: rgba(0, 255, 255, 0.101);
+/* Estilo para la lista de paginación */
+nav {
+    background-color: rgb(220, 238, 249);
     color: black;
-    
-    
+    text-align: center; /* Alinea el contenido del navbar al centro */
+    overflow: hidden; /* Añadir clearfix para limpiar el float de la imagen */
 }
 
 nav ul {
-    display: inline-block;
-    vertical-align: middle;
-    align-items: center;
     list-style: none;
-    color: aqua;
-    font-size: 20px; /* Tamaño de las estrellas */
-    font-style:initial;
+    padding: 0;
+    margin: 0; /* Elimina el margen horizontal de la lista */
+    display: inline-block; /* Hacer que la lista sea un bloque en línea */
+    width: auto; /* Ancho automático para ajustarse al contenido */
 }
 
-
-/* Estilo base para pantallas más grandes (ajusta los valores según sea necesario) */
+/* Estilo para los elementos de la lista de paginación */
 nav ul li {
     display: inline;
     margin-right: 20px;
-    
-    
 }
+
 
 /* Cambiar el color del texto en el navbar a negro */
 nav ul li a {
     color: black;
+    text-decoration: none; /* Quitar decoración de subrayado de los enlaces */
+}
+
+
+/* Estilo hover para los elementos de navegación */
+nav a:hover {
+    color: rgb(103, 196, 247); /* Cambia el color del texto al pasar el mouse */
 }
 
 /* Estilo para pantallas más pequeñas */
 @media (max-width: 768px) {
+    .logo {
+        width: 20%; /* Hacer que la imagen ocupe el ancho completo en pantallas pequeñas */
+        margin-right: 0;
+    }
+
+    nav ul {
+        display: block; /* Cambiar a bloque para que los elementos estén uno debajo del otro */
+        margin: 0; /* Eliminar el margen en pantallas pequeñas */
+        text-align: center; /* Centrar el contenido de la lista */
+    }
+
     nav ul li {
-        display: block; /* Cambia a bloques para que los elementos estén uno debajo del otro */
-        margin-right: 0; /* Elimina el margen entre elementos */
-        margin-bottom: 10px; /* Agrega espacio entre elementos apilados */
+        display: block; /* Cambiar a bloque para que los elementos estén uno debajo del otro */
+        margin-right: 0; /* Eliminar el margen entre elementos */
+        margin-bottom: 10px; /* Agregar espacio entre elementos apilados */
     }
 }
 
-nav a {
-    text-decoration: none; /* Quitar decoración de subrayado de los enlaces */
 
-}
+
+
 
 
 
 .entrada{
     text-align: center;
-    margin: 2%;
+    margin-top: 5%;
 
 }
 
 .titulo-pag{
-color: rgb(181, 104, 166);
+color: rgb(18, 97, 158);
 }
+
+
 
 
 .calificacion {
@@ -141,6 +165,144 @@ color: rgb(181, 104, 166);
   
   .carousel{
     width: 100%;
-    height: 80%;
+    height: 70%;
+   
 
+  }
+
+  .carrusel-top{
+    max-width: 800px; /* Cambia este valor según tus necesidades */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+
+
+  }
+
+  .ribbon {
+    margin-bottom: 5%;
+    border-radius: 40%;
+    border-bottom: 3px solid rgb(138, 191, 232);
+    
+}
+
+
+  .fondo-sec{
+
+
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    padding: 1%; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contenedor-titulo {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.formaDos {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 40px solid lightblue;
+    border-bottom: 20px solid transparent;
+    margin-right: 10px; /* Añadir margen a la derecha para separar del título */
+}
+
+.formaTres{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 40px solid lightblue;
+    border-bottom: 20px solid transparent;
+    margin-right: 10px; /* Añadir margen a la derecha para separar del título */
+}
+
+.forma-container {
+    display: flex;
+}
+
+.formaCuatro {
+    width: 0;
+     height: 0;
+     border-top: 20px solid transparent;
+     border-left: 40px solid lightblue;
+     border-bottom: 20px solid transparent;
+}
+
+
+
+.formaDos:hover {
+    filter: saturate(180%);
+}
+
+.formaTres:hover {
+    filter: saturate(180%);
+}
+
+.formaCuatro:hover {
+    filter: saturate(180%);
+}
+
+.titulo-top {
+    margin: 1%;
+    color: rgb(4, 29, 49);
+}
+
+
+.container-dia {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    margin-left: 10%; /* Espacio en el lado izquierdo */
+    margin-right: 10%; /* Espacio en el lado derecho */
+    overflow: hidden; /* Para limpiar el float */
+}
+
+.imagen {
+    float: left; /* Coloca la imagen a la izquierda */
+    margin-right: 5%; /* Agrega una pequeña separación a la derecha de la imagen */
+    border-radius: 2%;
+    
+
+}
+
+.imagen:hover {
+    filter: saturate(180%);
+}
+
+
+.texto {
+    overflow: hidden; /* Para limpiar el float */
+}
+
+
+.maquina-de-escribir {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: escribir 4s steps(35, end) 1s normal both;
+    border-right: 2px solid transparent;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes escribir {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .contenedor-citas{
+    text-align: center;
+  }
+
+  .centrar-texto blockquote {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 100%; /* El bloque se ajustará al ancho máximo de su contenedor */
+    padding: 0 20px; /* Agrega espacio en los lados para mejorar la legibilidad */
   }
