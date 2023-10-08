@@ -17,7 +17,7 @@
 
     <!-- SCRIPT de llenado-->
 
-<script src="../js/llenadoM.js"></script>
+    <script src="../js/llenadoN.js"></script>
 
 </head>
 
@@ -62,7 +62,7 @@
                     <a href="./opinion.html">Aporte</a>
                   </li>
           
-          
+
 
             </ul>
 
@@ -74,40 +74,72 @@
     <main>
 
 
-        
+
         <div class="entrada ribbon">
             <h1 class="titulo-pag">Books Friends</h3>
         </div>
 
-  
-        
+
+
 
         <div class="contenedor-titulo">
             <div class="forma-container">
                 <div class="formaCuatro"></div>
                 <div class="formaCuatro"></div>
             </div>
-            <h1 class="titulo-top">Misterio</h1>
+            <h1 class="titulo-top">Deja tu Aporte</h1>
             <div class="forma-container">
                 <div class="formaTres"></div>
                 <div class="formaTres"></div>
             </div>
         </div>
 
-
         <div class="contenedor-citas">
             <blockquote>
-                <p class="maquina-de-escribir">"La traición puede volverse mucho más fuerte que el amor." <br> — John Katzenbach, <i>El Psicoanalista</i></p>
+                <p class="maquina-de-escribir">Envia tus recomendaciónes <br> — <i>Book Friends</i></p>
             </blockquote>
         </div>
-        
 
 
-        <section class="container">
-            <div class="row" id="card-container">
-              <!-- Aquí se crearán las cards dinámicamente -->
+
+        <section class="contenedor-form">
+            <div class="contenedor-interior">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="correo@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label class="sr-only" for="inlineFormInput">Titulo del libro:</label>
+                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Orgullo y prejuicio">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Sinopsis: </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="sr-only" for="inlineFormInput">Enlace de imagen del libro:</label>
+                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="wwww.imagen.jpg">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Puntuación del libro:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <!-- Botón de envío -->
+                <button type="submit" class="btn btn-modificado btn-outline-info ">Enviar</button>
+
+
             </div>
-          </section>
+        </section>
 
 
 
@@ -115,10 +147,11 @@
 
     <footer>
         <p>Copyright &copy; 2023 Santana Sanchez M. Yvette.</p>
-          <a href="https://github.com/YSantanas" target="_blank" style="text-decoration: none; color: #6B3A69; font-weight: bold;">
+        <a href="https://github.com/YSantanas" target="_blank"
+            style="text-decoration: none; color: #6B3A69; font-weight: bold;">
             <i class="fab fa-github"></i> GitHub</a></p>
-      </footer>
-      
+    </footer>
+
 
 </body>
 
