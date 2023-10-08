@@ -305,6 +305,7 @@ color: rgb(18, 97, 158);
     margin: 0 auto;
     max-width: 100%; /* El bloque se ajustará al ancho máximo de su contenedor */
     padding: 0 20px; /* Agrega espacio en los lados para mejorar la legibilidad */
+<<<<<<< HEAD
   }
 
   
@@ -337,3 +338,6 @@ color: rgb(18, 97, 158);
     background-color: white;
     
 }
+=======
+  }
+>>>>>>> d42a432204b5601964e3b18cd0ade06321ea8630
