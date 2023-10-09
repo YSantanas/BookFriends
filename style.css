@@ -199,6 +199,7 @@ color: rgb(18, 97, 158);
   display: flex;
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
+  text-align: center;
 }
 
 .formaDos {
@@ -221,6 +222,7 @@ color: rgb(18, 97, 158);
 
 .forma-container {
   display: flex;
+  justify-content: center;
 }
 
 .formaCuatro {
@@ -308,7 +310,7 @@ color: rgb(18, 97, 158);
 }
 
 
-.contenedor-form {
+form {
   display: flex;
   justify-content: center;
 
@@ -317,7 +319,7 @@ color: rgb(18, 97, 158);
 }
 
 .contenedor-interior {
-  padding: 3%;
+  padding: 2%;
   background-color: rgb(242, 242, 242);
   width: 90%;
   max-width: 600px; /* Cambiado para limitar el ancho máximo del formulario */
@@ -327,13 +329,44 @@ color: rgb(18, 97, 158);
 }
 
 .contenedor-interior:hover {
-  border-color: #a848e0; /* Cambia el color del borde al señalar (hover) */
+  border-color: #c9c311; /* Cambia el color del borde al señalar (hover) */
 }
 
 /* Estilo para el botón */
 .btn-modificado {
-  margin-top: 2%;
   width: 100%; /* Para que el botón ocupe todo el ancho */
-  background-color: white;
   
+}
+
+.previo{
+  align-items: center;
+  justify-content: center
+}
+
+.formaUnaPrevio{
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #5cb85c;
+  margin: 3px;
+}
+
+.formaDosPrevio {  align-items: center;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #5cb85c;
+  margin: 3px;
+}
+
+.formaUnaPrevio:hover {
+  filter: saturate(180%);
+}
+
+.formaDosPrevio:hover {
+  filter: saturate(180%);
 }

@@ -14,11 +14,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
-    <!-- SCRIPT de llenado-->
-
-    <script src="../js/llenadoN.js"></script>
-
 </head>
 
 
@@ -60,8 +55,8 @@
                 </li>
                 <li>
                     <a href="./opinion.html">Aporte</a>
-                  </li>
-          
+                </li>
+
 
 
             </ul>
@@ -101,47 +96,80 @@
         </div>
 
 
+        <section>
+            <form id="miFormulario"> <!-- Agregamos un ID al formulario para facilitar su selección -->
+                <div class="contenedor-interior">
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tituloLibro" class="form-label">Titulo del libro:</label>
+                        <input type="text" class="form-control mb-2" id="tituloLibro" placeholder="Orgullo y prejuicio">
+                    </div>
 
-        <section class="contenedor-form">
-            <div class="contenedor-interior">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="correo@ejemplo.com">
+                    <div class="mb-3">
+                        <label for="sinopsis" class="form-label">Sinopsis: </label>
+                        <textarea class="form-control" id="sinopsis" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="enlaceImagen" class="form-label">Enlace de imagen del libro:</label>
+                        <input type="text" class="form-control mb-2" id="enlaceImagen" placeholder="wwww.imagen.jpg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="puntuacion" class="form-label">Puntuación del libro:</label>
+                        <select class="form-control" id="puntuacion">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- Botón de previsualización -->
+                            <button type="button" class="btn btn-modificado btn-outline-warning my-4"
+                                id="btnPrevisualizar">Previsualizar</button>
+                        </div>
+                        <div class="col-6">
+                            <!-- Botón de envío -->
+                            <button type="submit" class="btn btn-modificado btn-outline-info my-4"
+                                id="btnEnviar">Enviar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label class="sr-only" for="inlineFormInput">Titulo del libro:</label>
-                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Orgullo y prejuicio">
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Sinopsis: </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-
-                <div class="mb-3">
-                    <label class="sr-only" for="inlineFormInput">Enlace de imagen del libro:</label>
-                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="wwww.imagen.jpg">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Puntuación del libro:</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <!-- Botón de envío -->
-                <button type="submit" class="btn btn-modificado btn-outline-info ">Enviar</button>
-
-
-            </div>
+            </form>
         </section>
 
 
+        <!--  <div id="resultados">-->
+        <!--   </div>-->
+
+        <div class="contenedor-titulo my-5 previo" id="previsualizacion">
+            <div class="forma-container">
+                <div class="formaUnaPrevio align-items-center"></div>
+                <div class="formaUnaPrevio align-items-center"></div>
+                <div class="formaUnaPrevio align-items-center"></div>
+                <div class="formaUnaPrevio align-items-center"></div>
+                <div class="formaUnaPrevio align-items-center"></div>
+                <div class="formaUnaPrevio align-items-center"></div>
+            </div>
+            <h1 class="titulo-top">Previsualización</h1>
+            <div class="forma-container">
+                <div class="formaDosPrevio"></div>
+                <div class="formaDosPrevio"></div>
+                <div class="formaDosPrevio"></div>
+                <div class="formaDosPrevio"></div>
+                <div class="formaDosPrevio"></div>
+                <div class="formaDosPrevio"></div>
+            </div>
+        </div>
+
+        <div id="tarjetas-container" class="row previo">
+        </div>
 
     </main>
 
@@ -152,6 +180,7 @@
             <i class="fab fa-github"></i> GitHub</a></p>
     </footer>
 
+    <script src="../js/formulario.js"></script>
 
 </body>
 
